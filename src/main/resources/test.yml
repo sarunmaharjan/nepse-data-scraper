@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        hikari:
+            maximumPoolSize: 8
+        password: YOUR_Pass_Word
+        url: jdbc:mysql://YOUR_Host_Name:3306/YOUR_Schema_Name?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+        username: YOUR_User_Name
+    jpa:
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                default_schema: YOUR_Schema_Name
+                format_sql: true
+                generate_statistics: true
+        show-sql: true
+    thymeleaf:
+        cache: false
